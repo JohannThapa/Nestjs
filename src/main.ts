@@ -1,7 +1,6 @@
 import { ValidationPipe } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
 import { NestFactory } from '@nestjs/core';
-import express from 'express';
 import { AppModule } from './app.module';
 import { buildDocument } from './config/documentBuilder';
 
@@ -21,6 +20,5 @@ async function bootstrap() {
   }
   await app.listen(configService.get<number>('PORT') || 8080);
   console.log(`Application is running on: ${await app.getUrl()}`);
-  // await app.listen(3000);
 }
 bootstrap();

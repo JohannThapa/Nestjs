@@ -1,10 +1,8 @@
 import { Injectable } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { from, Observable } from 'rxjs';
-import { GenderEnum } from 'src/common/enums/gender.enum';
 import { IStudent } from 'src/common/interfaces/student.interface';
 import { StudentEntity } from 'src/models/student/student.entity';
-import { StudentModel } from 'src/models/student/student.model';
 import { Repository } from 'typeorm';
 import { CreateStudentDto } from './dto/create.dto';
 

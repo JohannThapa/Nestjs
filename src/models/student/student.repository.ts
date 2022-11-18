@@ -1,11 +1,10 @@
 import { Injectable } from '@nestjs/common';
-import { InjectRepository } from '@nestjs/typeorm';
 import { ReadResult } from 'src/common/interfaces/read-result/read-result.interface';
 import { pageNumber } from 'src/common/utility/page-number';
 import { CreateStudentDto } from 'src/examples/student/dto/create.dto';
 import { GetStudentBodyDto } from 'src/examples/student/dto/get.dto';
 import { PaginationDto } from 'src/examples/student/dto/pagination.dto';
-import { Between, DataSource, Repository } from 'typeorm';
+import { DataSource, Repository } from 'typeorm';
 import Address from './address.entity';
 import { StudentEntity } from './student.entity';
 
