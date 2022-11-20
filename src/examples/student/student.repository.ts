@@ -5,8 +5,8 @@ import { CreateStudentDto } from 'src/examples/student/dto/create.dto';
 import { GetStudentBodyDto } from 'src/examples/student/dto/get.dto';
 import { PaginationDto } from 'src/examples/student/dto/pagination.dto';
 import { DataSource, Repository } from 'typeorm';
-import Address from './address.entity';
-import { StudentEntity } from './student.entity';
+import Address from '../../common/entities/address.entity';
+import { StudentEntity } from './entity/student.entity';
 
 @Injectable()
 export class StudentRepository extends Repository<StudentEntity> {

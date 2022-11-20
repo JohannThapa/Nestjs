@@ -2,7 +2,7 @@ import { Injectable } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { from, Observable } from 'rxjs';
 import { IStudent } from 'src/common/interfaces/student.interface';
-import { StudentEntity } from 'src/models/student/student.entity';
+import { StudentEntity } from 'src/examples/student/entity/student.entity';
 import { Repository } from 'typeorm';
 import { CreateStudentDto } from './dto/create.dto';
 

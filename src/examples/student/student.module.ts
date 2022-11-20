@@ -1,7 +1,7 @@
 import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
-import { StudentEntity } from 'src/models/student/student.entity';
-import { StudentRepository } from 'src/models/student/student.repository';
+import { StudentEntity } from 'src/examples/student/entity/student.entity';
+import { StudentRepository } from 'src/examples/student/student.repository';
 import { StudentController } from './student.controller';
 import { StudentService } from './student.service';
 

@@ -1,19 +1,19 @@
 import { ApiProperty } from '@nestjs/swagger';
-import { StudentEntity } from 'src/examples/student/entity/student.entity';
+import { SchoolEntity } from '../entities/school.entity';
 
-export class StudentSuccessResponseDto {
+export class SchoolSuccessResponseDto {
   @ApiProperty({
     default: true,
   })
   success: true;
 
   @ApiProperty({
-    type: [StudentEntity],
+    type: [SchoolEntity],
   })
-  result: StudentEntity[];
+  result: SchoolEntity[];
 }
 
-export class StudentErrorResponseDto {
+export class SchoolErrorResponseDto {
   @ApiProperty({
     default: false,
   })
