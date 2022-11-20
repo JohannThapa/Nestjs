@@ -119,7 +119,7 @@ $ npm run test:cov
 ## ER Diagram
 
 <p align="center">
-<img src="./documents/ERD.png" width="200" alt="ER Diagram" />
+<img src="./documents/ERD.png" width="600" alt="ER Diagram" />
 </p>
 
 
