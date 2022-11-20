@@ -11,6 +11,7 @@ export class StudentModel implements IStudent {
   rollNo: number;
   address: string;
   phone: string;
+  email: string;
   updatedAt: Date;
   constructor(
     id: string,
@@ -21,6 +22,7 @@ export class StudentModel implements IStudent {
     className: string,
     address: string,
     phone: string,
+    email: string,
   ) {
     this.name = name;
     this.id = Date.parse(id);
@@ -31,6 +33,7 @@ export class StudentModel implements IStudent {
     this.class = className;
     this.address = address;
     this.phone = phone;
+    this.email = email;
     this.updatedAt = new Date(id);
   }
 }

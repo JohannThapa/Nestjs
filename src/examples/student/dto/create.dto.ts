@@ -4,12 +4,14 @@ import {
   IsEnum,
   IsNotEmpty,
   IsNumber,
+  IsOptional,
   IsString,
   MinLength,
 } from 'class-validator';
 import { GenderEnum } from 'src/common/enums/gender.enum';
 
 export class CreateStudentDto {
+  @ApiProperty()
   @Type(() => Number)
   @IsNumber()
   id: number;
@@ -26,6 +28,12 @@ export class CreateStudentDto {
   })
   @IsString()
   phone: string;
+
+  @ApiProperty({
+    type: String,
+  })
+  @IsString()
+  email: string;
 
   @ApiProperty({
     type: String,
@@ -57,6 +65,7 @@ export class CreateStudentDto {
   @ApiProperty({
     type: Number,
   })
+  @IsNotEmpty()
   @IsNumber()
   rollNo: number;
 }

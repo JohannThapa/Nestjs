@@ -8,7 +8,7 @@ import {
 
 @Entity('students')
 export class StudentEntity {
-  @PrimaryGeneratedColumn('uuid')
+  @PrimaryGeneratedColumn('increment')
   id: number;
   @Column({ nullable: true, length: 1000, unique: true })
   public name: string;
@@ -18,6 +18,8 @@ export class StudentEntity {
   updatedAt: Date;
   @Column({ nullable: true })
   public phone: string;
+  @Column({ nullable: true })
+  public email: string;
   @Column({ nullable: false, length: 1000 })
   public address: string;
   @Column({ type: 'enum', enum: GenderEnum, default: GenderEnum.male })

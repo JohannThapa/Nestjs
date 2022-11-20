@@ -9,6 +9,7 @@ export interface IStudent {
   rollNo?: number;
   address?: string;
   phone?: string;
+  email?: string;
   createdAt?: Date;
   updatedAt?: Date;
 }

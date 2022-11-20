@@ -12,7 +12,7 @@
 
 ## Description
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository. Simple School Management System.
 
 ## Project Structure
 ```
@@ -116,6 +116,12 @@ $ npm run test:e2e
 # test coverage
 $ npm run test:cov
 ```
+## ER Diagram
+
+<p align="center">
+<img src="./documents/ERD.png" width="200" alt="ER Diagram" />
+</p>
+
 
 ## Support
 
