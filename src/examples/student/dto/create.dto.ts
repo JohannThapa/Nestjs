@@ -4,7 +4,6 @@ import {
   IsEnum,
   IsNotEmpty,
   IsNumber,
-  IsOptional,
   IsString,
   MinLength,
 } from 'class-validator';
@@ -68,4 +67,16 @@ export class CreateStudentDto {
   @IsNotEmpty()
   @IsNumber()
   rollNo: number;
+
+  @ApiProperty({
+    type: Date,
+    default: new Date(),
+  })
+  createdAt: number;
+
+  @ApiProperty({
+    type: Date,
+    default: new Date(),
+  })
+  updatedAt: number;
 }
