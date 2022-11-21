@@ -4,7 +4,7 @@ import { TypeOrmModule } from '@nestjs/typeorm';
 import * as Joi from 'joi';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
-import { DatabaseModule } from './database/database/database.module';
+import { DatabaseModule } from './database/database.module';
 import { SchoolModule } from './examples/school/school.module';
 import { StudentModule } from './examples/student/student.module';
 

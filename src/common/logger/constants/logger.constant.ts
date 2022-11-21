@@ -1,0 +1,4 @@
+const LOGGER_ACTION_META_KEY = 'LoggerActionMetaKey';
+const LOGGER_OPTIONS_META_KEY = 'LoggerOptionsMetaKey';
+
+export { LOGGER_ACTION_META_KEY, LOGGER_OPTIONS_META_KEY };
